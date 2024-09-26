@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/baoo"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ingredientImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMeasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 kg"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/ingredientImg"
+            app:layout_constraintStart_toStartOf="@+id/txtIngredient"
+            app:layout_constraintTop_toTopOf="@id/ingredientImg"
+            app:layout_constraintVertical_bias="0.137" />
+
+        <TextView
+            android:id="@+id/txtIngredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:text="@string/ingredient"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/ingredientImg"
+            app:layout_constraintStart_toEndOf="@+id/ingredientImg"
+            app:layout_constraintTop_toTopOf="@id/ingredientImg"
+            app:layout_constraintVertical_bias="0.686" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
